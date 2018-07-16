@@ -1,0 +1,10 @@
+因为打开了ecplise ，并且临时用了tomcat服务器，导致自己打开myecplise以后无法顺利使用，换了换Tomcat服务器也没有任何作用，在网上搜了很多种方法也没有解决，今天看到这个办法还是挺好用且很简单的，记录下以便于以后忘了查
+
+1、首先关闭MyEclipse工作空间。
+2、然后删除工作空间下的
+“/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.genuitec.eclipse.ast.deploy.core.pref
+s”
+这个文件。在这个文件中存储了一些部署项目的信息。删了这个部署的项目的信息就没有错误了。
+3、重启启动MyEclipse即可解决了。
+
+ 
